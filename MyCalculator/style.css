@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator {
+    background: #b3e5fc;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 3px solid #81d4fa;
+    max-width: 350px;
+    width: 100%;
+}
+
+.display {
+    background: #e1f5fe;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #4fc3f7;
+    position: relative;
+    min-height: 120px;
+}
+
+.face {
+    position: relative;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.eyes {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.eye {
+    width: 25px;
+    height: 25px;
+    background: #333;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pupil {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+
+.mouth {
+    width: 15px;
+    height: 8px;
+    background: #333;
+    border-radius: 0 0 15px 15px;
+    margin: 8px auto;
+}
+
+.blush {
+    width: 12px;
+    height: 8px;
+    background: #ffb3ba;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+}
+
+.left-blush {
+    left: 30px;
+}
+
+.right-blush {
+    right: 30px;
+}
+
+.screen {
+    background: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: right;
+    border: 2px solid #29b6f6;
+}
+
+#display-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #01579b;
+    min-height: 30px;
+    display: block;
+}
+
+.buttons {
+    display: grid;
+    gap: 12px;
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.number {
+    background: linear-gradient(145deg, #e1f5fe, #b3e5fc);
+    color: #01579b;
+    border: 2px solid #4fc3f7;
+}
+
+.number:hover {
+    background: linear-gradient(145deg, #b3e5fc, #81d4fa);
+}
+
+.operation {
+    background: linear-gradient(145deg, #81d4fa, #4fc3f7);
+    color: white;
+    border: 2px solid #29b6f6;
+}
+
+.operation:hover {
+    background: linear-gradient(145deg, #4fc3f7, #29b6f6);
+}
+
+.btn[data-value="clear"] {
+    background: linear-gradient(145deg, #ffb3ba, #ff9999);
+    color: white;
+    border: 2px solid #ff6b75;
+}
+
+.btn[data-value="clear"]:hover {
+    background: linear-gradient(145deg, #ff9999, #ff6b75);
+}
+
+.btn[data-value="="] {
+    background: linear-gradient(145deg, #a8e6cf, #7fcdcd);
+    color: white;
+    border: 2px solid #64b5f6;
+}
+
+.btn[data-value="="]:hover {
+    background: linear-gradient(145deg, #7fcdcd, #5dade2);
+}
+
+.blank {
+    background: linear-gradient(145deg, #f0f8ff, #e1f5fe);
+    color: transparent;
+    border: 2px solid #b3e5fc;
+    cursor: default;
+}
+
+.blank:hover {
+    background: linear-gradient(145deg, #f0f8ff, #e1f5fe);
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blank:active {
+    transform: none;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .calculator {
+        padding: 15px;
+    }
+    
+    .btn {
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    #display-value {
+        font-size: 20px;
+    }
+}

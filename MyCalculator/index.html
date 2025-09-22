@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Baby Blue Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="face">
+                <div class="eyes">
+                    <div class="eye left-eye">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye right-eye">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+                <div class="mouth"></div>
+                <div class="blush left-blush"></div>
+                <div class="blush right-blush"></div>
+            </div>
+            <div class="screen">
+                <span id="display-value">0</span>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <div class="button-row">
+                <button class="btn operation" data-value="clear">C</button>
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+            </div>
+            
+            <div class="button-row">
+                <button class="btn operation" data-value="÷">÷</button>
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+            </div>
+            
+            <div class="button-row">
+                <button class="btn operation" data-value="×">×</button>
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+            </div>
+            
+            <div class="button-row">
+                <button class="btn operation" data-value="+">+</button>
+                <button class="btn number" data-value="0">0</button>
+                <!--add pie button-->
+                <button class="btn number" data-value="π"></button>
+                <button class="btn operation" data-value="=">=</button>
+            </div>
+            
+            <div class="button-row">
+                <button class="btn operation" data-value="-">-</button>
+                <!--add additonal operations-->
+                <button class="btn number"></button>
+                <button class="btn number"></button>
+                <button class="btn number"></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
