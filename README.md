@@ -1,5 +1,7 @@
 # Cute Baby Blue Calculator
 
+*[En français](README_FR.md)*
+
 A charming calculator with an animated face that responds to your calculations! This calculator features a cute blue design with blinking eyes and mouth animations.
 
 In this workshop, you will learn how to use GitHub Copilot to enhance an HTML Calculator, with little to no coding experience required. Through guided exercises and AI-powered assistance, you'll add mathematical functions and discover how GitHub Copilot can accelerate your development workflow.
