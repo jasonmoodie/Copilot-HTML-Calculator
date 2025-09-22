@@ -30,7 +30,7 @@ Dans cet atelier, vous apprendrez à utiliser GitHub Copilot pour améliorer une
 
 ## Comment Utiliser
 
-1. Ouvrez `index.html` dans votre navigateur web
+1. Ouvrez `MyCalculator/index.html` dans votre navigateur web
 2. Cliquez sur les boutons ou utilisez votre clavier pour effectuer des calculs
 3. Regardez le visage de la calculatrice s'animer pendant que vous travaillez !
 
@@ -47,7 +47,7 @@ La calculatrice est conçue pour être facilement extensible. Ci-dessous se trou
 ### 1. Exercice Principal : Ajouter un Bouton Pi (π)
 
 #### Étape 1 : Ajouter le Bouton HTML
-Dans `index.html`, trouvez le bouton vide avec le commentaire `<!--add pie button-->` et ajoutez le code suivant en utilisant GitHub Copilot :
+Dans `MyCalculator/index.html`, trouvez le bouton vide avec le commentaire `<!--add pie button-->` et ajoutez le code suivant en utilisant GitHub Copilot :
 
 ```html
  <!--add pie button-->
@@ -55,7 +55,7 @@ Dans `index.html`, trouvez le bouton vide avec le commentaire `<!--add pie butto
 ```
 
 #### Étape 2 : Ajouter la Méthode d'Entrée Pi
-Dans `script.js`, trouvez le commentaire `// Add pi input support to 5 decimal places` et la nouvelle méthode à la classe Calculator :
+Dans `MyCalculator/script.js`, trouvez le commentaire `// Add pi input support to 5 decimal places` et la nouvelle méthode à la classe Calculator :
 
 ```javascript
     // Add pi input support to 5 decimal places
@@ -66,7 +66,7 @@ Dans `script.js`, trouvez le commentaire `// Add pi input support to 5 decimal p
 ```
 
 #### Étape 3 : Mettre à Jour JavaScript pour Gérer Pi
-Dans `script.js`, modifiez le commentaire `// Add support for pi` dans la méthode `handleInput` pour gérer la valeur π. Ajoutez la condition après la vérification de nombre existante :
+Dans `MyCalculator/script.js`, modifiez le commentaire `// Add support for pi` dans la méthode `handleInput` pour gérer la valeur π. Ajoutez la condition après la vérification de nombre existante :
 
 ```javascript
 handleInput(value) {
@@ -88,7 +88,7 @@ handleInput(value) {
 ```
 
 #### Étape 4 : Ouvrir la Calculatrice HTML et Tester
-Pour vérifier que le bouton Pi fonctionne, ouvrez `index.html` dans votre navigateur et cliquez sur le bouton π. L'affichage devrait montrer `3.14159`. Testez des calculs comme `π + 2` pour vous assurer qu'il fonctionne correctement.
+Pour vérifier que le bouton Pi fonctionne, ouvrez `MyCalculator/index.html` dans votre navigateur et cliquez sur le bouton π. L'affichage devrait montrer `3.14159`. Testez des calculs comme `π + 2` pour vous assurer qu'il fonctionne correctement.
 
 ---
 ### 2. Utiliser le Mode Agent pour Toutes les Fonctions Avancées 🤖

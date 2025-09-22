@@ -48,7 +48,7 @@ The calculator is designed to be easily extensible. Below are detailed instructi
 ### 1. Core Exercise: Adding a Pi (π) Button
 
 #### Step 1: Add the HTML Button
-In `index.html`, find the empty button with the comment `<!--add pie button-->` and add the following code using GitHub Copilot:
+In `MyCalculator/index.html`, find the empty button with the comment `<!--add pie button-->` and add the following code using GitHub Copilot:
 
 ```html
  <!--add pie button-->
@@ -56,7 +56,7 @@ In `index.html`, find the empty button with the comment `<!--add pie button-->` 
 ```
 
 #### Step 2: Add the Pi Input Method
-AIn `script.js`, find the comment `// Add pi input support to 5 decimal places` and the new method to the Calculator class:
+In `MyCalculator/script.js`, find the comment `// Add pi input support to 5 decimal places` and the new method to the Calculator class:
 
 ```javascript
     // Add pi input support to 5 decimal places
@@ -67,7 +67,7 @@ AIn `script.js`, find the comment `// Add pi input support to 5 decimal places` 
 ```
 
 #### Step 3: Update JavaScript to Handle Pi
-In `script.js`, modify the `// Add support for pi` comment in the `handleInput` method to handle the π value. Add the condition after the existing number check:
+In `MyCalculator/script.js`, modify the `// Add support for pi` comment in the `handleInput` method to handle the π value. Add the condition after the existing number check:
 
 ```javascript
 handleInput(value) {
@@ -89,7 +89,7 @@ handleInput(value) {
 ```
 
 #### Step 4: Open the HTML calculator and Test
-To verify the Pi button works, open `index.html` in your browser and click the π button. The display should show `3.14159`. Test calculations like `π + 2` to ensure it functions correctly.
+To verify the Pi button works, open `MyCalculator/index.html` in your browser and click the π button. The display should show `3.14159`. Test calculations like `π + 2` to ensure it functions correctly.
 
 ---
 ### 2. Using Agent Mode for All Advanced Functions 🤖
