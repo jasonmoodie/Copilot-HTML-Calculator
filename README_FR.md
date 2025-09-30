@@ -47,10 +47,10 @@ La calculatrice est conçue pour être facilement extensible. Ci-dessous se trou
 ### 1. Exercice Principal : Ajouter un Bouton Pi (π)
 
 #### Étape 1 : Ajouter le Bouton HTML
-Dans `MyCalculator/index.html`, trouvez le bouton vide avec le commentaire `<!--add pie button-->` et ajoutez le code suivant en utilisant GitHub Copilot :
+Dans `MyCalculator/index.html`, trouvez le bouton vide avec le commentaire `<!--add pi button-->` et ajoutez le code suivant en utilisant GitHub Copilot :
 
 ```html
- <!--add pie button-->
+ <!--add pi button-->
 <button class="btn number" data-value="π">π</button>
 ```
 
